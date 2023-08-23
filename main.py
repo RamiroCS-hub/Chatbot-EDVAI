@@ -107,4 +107,7 @@ with gr.Blocks() as demo:
     # Función que se ejecuta cada vez que se manda un mensaje y verifica si hay que detener el código o no
     msg.submit(exitFunction, msg, None)
 
-demo.launch(inbrowser=True)
+if(__name__ == "__main__"):
+    demo.launch(inbrowser=True);
+else:
+    print("Ejecute el archivo main.py porfavor");
